@@ -10,11 +10,13 @@ import Home from './routes/Home.tsx'
 import Dashboard from './routes/Dashboard.tsx'
 import Login from './routes/Login.tsx'
 import Signin from './routes/Signin.tsx'
+import Error404 from './routes/Error404.tsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    errorElement: <Error404 />,
     children: [
       {
         path: "/",
