@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './routes/Home.tsx'
 import Dashboard from './routes/Dashboard.tsx'
 import Login from './routes/Login.tsx'
+import EsqueceuSenha from './routes/EsqueceuSenha.tsx'
 import Signin from './routes/Signin.tsx'
 import Error404 from './routes/Error404.tsx'
 
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/cadastre-se",
         element: <Signin/>
+      },
+      {
+        path: "/recuperar-senha",
+        element: <EsqueceuSenha/>
       },
       {
         path: "/dashboard",

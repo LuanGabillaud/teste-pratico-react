@@ -1,7 +1,8 @@
 import React, { useState, FormEvent } from "react";
 import { FaUser, FaLock } from "react-icons/fa";
 import AuthLayout from "../components/AuthLayout";
-import AuthStyle from "../styles/GlobalStyles";
+import AuthStyle from "../styles/AuthStyles";
+import { Link } from "react-router-dom";
 import "../css/Login.css";
 
 const Login: React.FC = () => {
@@ -28,12 +29,12 @@ const Login: React.FC = () => {
             <label>
               <input type="checkbox" /> Lembre de mim
             </label>
-            <a href="#">Esqueceu sua senha?</a>
+            <Link to="/recuperar-senha">Esqueceu sua senha?</Link>
           </div>
           <button type="submit">Login</button>
           <div className="signup-link">
             <p>
-              Não tem uma conta? <a href="#">Registrar</a>{" "}
+              Não tem uma conta? <Link to="/cadastre-se">Registrar</Link>
             </p>
           </div>
         </>

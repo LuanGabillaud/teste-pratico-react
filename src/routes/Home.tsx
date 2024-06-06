@@ -1,7 +1,16 @@
-// import React from "react"
+// import React from "react";
+import { Link } from "react-router-dom";
+import LandingPageStyles from "../styles/LandingPageStyles"
 
-const Home = () => {
-    return <div>Home</div>
-}
+const Login = () => {
 
-export default Home
+  return (
+    <LandingPageStyles backgroundColor="#2F2F2F" backgroundImage="none">
+    <div>        
+        <nav>Home <Link to="/login">Log In</Link> <Link to="/cadastre-se">Sign In</Link></nav>
+    </div>
+    </LandingPageStyles>
+  );
+};
+
+export default Login;

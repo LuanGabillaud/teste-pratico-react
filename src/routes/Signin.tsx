@@ -1,7 +1,8 @@
 import React, { useState, FormEvent } from "react";
 import { FaUser, FaLock } from "react-icons/fa";
 import AuthLayout from "../components/AuthLayout";
-import AuthStyle from "../styles/GlobalStyles";
+import AuthStyle from "../styles/AuthStyles";
+import { Link } from "react-router-dom";
 import "../css/Login.css";
 
 const Registrar: React.FC = () => {
@@ -27,6 +28,11 @@ const Registrar: React.FC = () => {
       footer={
         <>          
           <button type="submit">Registrar</button>
+          <div className="signup-link">
+            <p>
+            Voltar para o <Link to="/login">Login</Link>
+            </p>
+          </div>
         </>
       }
     >
