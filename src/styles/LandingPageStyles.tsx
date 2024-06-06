@@ -164,12 +164,14 @@ export const InputContainer = styled.div`
 `;
 
 export const InputFooter = styled.input`
+  background-color: transparent;
   flex: 1;
   border: none;
   padding: 0 24px;
   height: 100%;
   outline: none;
   border-radius: 999px 0 0 999px;
+  color: #01FE84;
 `;
 
 export const ButtonFooter = styled(Button)`
@@ -177,13 +179,13 @@ export const ButtonFooter = styled(Button)`
   border: 1px solid #01FE84;
   font-weight: 700;
   color: #101310;
-  box-shadow: 0px 4px 59px rgba(1, 254, 132, 0.4);
+  box-shadow: 0px 4px 59px rgba(1, 254, 132, 0.8);
   padding: 0 20px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-`
+`;
 
 const LandingPageStyles: React.FC<LandingPageProps & { children: React.ReactNode }> = ({ backgroundColor, backgroundImage, children }) => {
   return (

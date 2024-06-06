@@ -9,7 +9,7 @@ type LayoutProps = {
 
 const PageLayout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <LandingPageStyles backgroundColor="#2F2F2F" backgroundImage="none">
+    <LandingPageStyles backgroundColor="#101310" backgroundImage="none">
       <Container>
         <Nav>
           <Logo><img src={learnToLearn} alt="logo" /></Logo>
@@ -39,8 +39,8 @@ const PageLayout: React.FC<LayoutProps> = ({ children }) => {
           </Links>
           <InfoFooter>
             <InputContainer>
-              <InputFooter placeholder="Seu e-mail" />
-              <ButtonFooter>Enviar</ButtonFooter>
+              <InputFooter placeholder="Seu e-mail"/>
+              <ButtonFooter>Subscribe</ButtonFooter>
             </InputContainer>
             <p>© 2024 Lerntolern. All right reserved</p>
           </InfoFooter>          
