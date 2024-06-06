@@ -1,38 +1,126 @@
-import React from 'react';
-import { LandingPageStyleProps } from '../types/LandingPageTypes';
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
-// Defina os estilos globais
-const GlobalStyle = createGlobalStyle<{ backgroundColor: string, backgroundImage: string }>`
+interface LandingPageProps {
+  backgroundColor: string;
+  backgroundImage: string;
+}
+
+export const GlobalStyle = createGlobalStyle<LandingPageProps>`
   body {
-    background-color: ${(props) => props.backgroundColor || '#2F2F2F'};
-    background-image: ${(props) => props.backgroundImage || 'none'};
+    background-color: ${(props) => props.backgroundColor};
+    background-image: ${(props) => props.backgroundImage};
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    gap: 4px;
-    isolation: isolate;
-    position: absolute;
-    width: 100%;
-    height: 88px;
-    left: 0px;
-    top: 0px;
-    backdrop-filter: blur(91.5px);
+  a {
+    text-decoration: none;
   }
 `;
 
-const AuthStyle: React.FC<LandingPageStyleProps> = ({ backgroundColor, children, backgroundImage }) => {
+export const Container = styled.div`
+  width: 100%;
+`;
+
+export const Nav = styled.nav`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  gap: 4px;
+  position: absolute;
+  width: 100%;
+  height: 88px;
+  left: 0px;
+  top: 0px;
+  backdrop-filter: blur(91.5px);
+
+  @media (max-width: 768px) {
+    padding: 20px 2%;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+`;
+
+export const Logo = styled.div`
+  font-size: 1.5rem;
+  font-weight: bold;
+`;
+
+export const Links = styled.div`
+  display: flex;
+  gap: 16px;
+`;
+
+export const StyledLink = styled(Links)`
+  a {
+    text-decoration: none;
+    font-size: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.active {
+      color: #ffffff;
+      opacity: 1;
+    }
+
+    &.inactive {
+      color: #c3c0c0;
+      opacity: 0.7;
+    }
+    
+  }    
+`;
+
+export const Button = styled.a`
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 12px 4px;
+   margin-right: 10px;
+   gap: 5px;
+   width: 124px;
+   height: 48px;   
+   border-radius: 999px;
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+`;
+
+export const ButtonLogin = styled(Button)`
+  background: #01FE84;
+  border: 1px solid #01FE84;  
+  font-weight: 700;
+  color: #101310;
+  box-shadow: 0px 4px 59px rgba(1, 254, 132, 0.4);
+`;
+
+export const ButtonSignin = styled(Button)`
+  background: transparent;
+  border: 1px solid #01FE84;
+  font-weight: 700;
+  color: #01FE84;
+`;
+
+const LandingPageStyles: React.FC<LandingPageProps & { children: React.ReactNode }> = ({ backgroundColor, backgroundImage, children }) => {
   return (
     <>
       <GlobalStyle backgroundColor={backgroundColor} backgroundImage={backgroundImage} />
-      <div>{children}</div>
+      {children}
     </>
   );
 };
 
-export default AuthStyle;
+export default LandingPageStyles;

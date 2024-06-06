@@ -31,7 +31,8 @@ const styles: { [key: string]: React.CSSProperties } = {
     },
     footer: {
         paddingTop: '8px',
-        marginTop: '16px',
+        marginTop: '16px',        
+        color: '#fff'
     },
 };
 
