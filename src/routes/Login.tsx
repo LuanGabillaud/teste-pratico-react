@@ -1,6 +1,7 @@
 import React, { useState, FormEvent } from "react";
 import { FaUser, FaLock } from "react-icons/fa";
 import AuthLayout from "../components/AuthLayout";
+import AuthStyle from "../styles/GlobalStyles";
 import "../css/Login.css";
 
 const Login: React.FC = () => {
@@ -18,6 +19,7 @@ const Login: React.FC = () => {
   };
 
   return (
+    <AuthStyle backgroundColor="#2F2F2F" backgroundImage="linear-gradient(to bottom, #2F2F2F 85%, #00B15C)">
     <AuthLayout
       header={<h1>Acesse o sistema</h1>}
       footer={
@@ -60,6 +62,7 @@ const Login: React.FC = () => {
         </div>
       </form>
     </AuthLayout>
+    </AuthStyle>
   );
 };
 
