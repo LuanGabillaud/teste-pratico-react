@@ -23,7 +23,6 @@ const styles: { [key: string]: React.CSSProperties } = {
         backgroundPosition: 'center',
     },
     header: {
-        borderBottom: '1px solid #ccc',
         paddingBottom: '8px',
         marginBottom: '16px',
     },
@@ -31,7 +30,6 @@ const styles: { [key: string]: React.CSSProperties } = {
         marginBottom: '16px',
     },
     footer: {
-        borderTop: '1px solid #ccc',
         paddingTop: '8px',
         marginTop: '16px',
     },
