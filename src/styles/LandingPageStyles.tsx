@@ -89,19 +89,19 @@ export const Button = styled.a`
    justify-content: center;
    align-items: center;
    padding: 12px 4px;
-   margin-right: 10px;
    gap: 5px;
    width: 124px;
-   height: 48px;   
-   border-radius: 999px;
+   height: 48px;
    flex: none;
+   cursor: pointer;
    order: 0;
    flex-grow: 0;
 `;
 
 export const ButtonLogin = styled(Button)`
   background: #01FE84;
-  border: 1px solid #01FE84;  
+  border: 1px solid #01FE84;       
+  border-radius: 999px;
   font-weight: 700;
   color: #101310;
   box-shadow: 0px 4px 59px rgba(1, 254, 132, 0.4);
@@ -109,10 +109,81 @@ export const ButtonLogin = styled(Button)`
 
 export const ButtonSignin = styled(Button)`
   background: transparent;
-  border: 1px solid #01FE84;
+  border: 1px solid #01FE84;     
+  border-radius: 999px;  
+  margin-right: 10px;
   font-weight: 700;
   color: #01FE84;
 `;
+
+export const Footer = styled.footer`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 47px 0px;
+    gap: 36px;
+
+    position: absolute;
+    width: 100%;
+    height: 309px;
+    left: 0px;
+    top: 4054.42px;
+
+    background: #1F241F;    
+`;
+
+export const InfoFooter = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 504px;
+
+    width: 1216px;
+    height: 84px;
+
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+    & p {        
+      color: #c3c0c0;
+      opacity: 0.7;
+    }
+`;
+
+export const InputContainer = styled.div`
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(1, 254, 132, 0.5);
+  border-radius: 999px;
+  width: 426px;
+  height: 48px;
+  overflow: hidden; /* Para garantir que os elementos internos se ajustem ao contêiner */
+`;
+
+export const InputFooter = styled.input`
+  flex: 1;
+  border: none;
+  padding: 0 24px;
+  height: 100%;
+  outline: none;
+  border-radius: 999px 0 0 999px;
+`;
+
+export const ButtonFooter = styled(Button)`
+  background: #01FE84;
+  border: 1px solid #01FE84;
+  font-weight: 700;
+  color: #101310;
+  box-shadow: 0px 4px 59px rgba(1, 254, 132, 0.4);
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
 
 const LandingPageStyles: React.FC<LandingPageProps & { children: React.ReactNode }> = ({ backgroundColor, backgroundImage, children }) => {
   return (

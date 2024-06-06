@@ -1,11 +1,12 @@
 // import React from "react"
 import { AuthLayoutProps } from "../types/AuthTypes";
+import learnToLearn from '../assets/learnToLearn-logo.svg';
 
 const AuthLayout: React.FC<AuthLayoutProps> = ({ header, footer, children }) => {
     return (
         <div style={styles.card}>
             <div className="container">
-            {header && <div style={styles.header}>{header}</div>}
+            {header && <div style={styles.header}><img src={learnToLearn} alt="logo" />{header}</div>}
             <div style={styles.content}>{children}</div>
             {footer && <div style={styles.footer}>{footer}</div>}
             </div>

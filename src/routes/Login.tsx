@@ -20,7 +20,7 @@ const Login: React.FC = () => {
   };
 
   return (
-    <AuthStyle backgroundColor="#2F2F2F" backgroundImage="linear-gradient(to bottom, #2F2F2F 85%, #00B15C)">
+    <AuthStyle backgroundColor="#101310" backgroundImage="linear-gradient(to bottom, #2F2F2F 85%, #00B15C)">
     <AuthLayout
       header={<h1>Acesse o sistema</h1>}
       footer={
