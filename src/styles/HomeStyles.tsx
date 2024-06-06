@@ -1,5 +1,21 @@
 import styled from 'styled-components';
 
+export const Losangos = styled.div`
+  position: absolute;
+  width: 325.52px;
+  height: 325.52px;
+  right: -200.76px;
+  top: 484px;
+  background: linear-gradient(137.69deg, #202420 23.82%, rgba(32, 36, 32, 0) 124.54%);
+  backdrop-filter: blur(5px);
+  border-radius: 27px;
+  transform: rotate(39.08deg);
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 2;
+`;
+
 export const GetStarted = styled.div`
     display: flex;
     flex-direction: row;
@@ -7,7 +23,6 @@ export const GetStarted = styled.div`
     padding: 0px;
     gap: 78px;
     isolation: isolate;
-
     position: absolute;
     width: 1285px;
     height: 762px;
@@ -78,7 +93,7 @@ export const Button = styled.a`
     flex: none;
     order: 1;
     flex-grow: 0;
-`
+`;
 
 const HomeStyles: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (

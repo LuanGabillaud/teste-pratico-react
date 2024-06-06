@@ -25,6 +25,7 @@ export const GlobalStyle = createGlobalStyle<LandingPageProps>`
 
 export const Container = styled.div`
   width: 100%;
+  overflow: hidden;
 `;
 
 export const Nav = styled.nav`
