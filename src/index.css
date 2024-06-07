@@ -13,3 +13,10 @@ body {
 .react-multiple-carousel__arrow::before {
   color: #01fe84 !important;
 }
+
+.container {
+  width: 90%;
+  height: 100%;
+  background-color: transparent;
+  padding: 40px;
+}

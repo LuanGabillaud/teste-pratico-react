@@ -1,9 +1,11 @@
 import PageLayout from "../components/PageLayout";
 import Carousel from "react-multi-carousel";
 import CarouselItem from "../components/CarouselItem";
+import StudentCarouselItem from "../components/CarouselStudents";
 import "react-multi-carousel/lib/styles.css";
 import man1 from "../assets/man1.svg";
 import man2 from "../assets/man2.svg";
+import woman from "../assets/woman.svg";
 import ilustrationIcon from "../assets/ilustration-icon.svg";
 import imgCard1 from "../assets/img-card1.png";
 import imgCard2 from "../assets/img-card2.webp";
@@ -36,7 +38,6 @@ import HomeStyles, {
   TitleCardFavoriteClasss,
   DescriptionCardFavoriteClass,
   InfoCardFavoriteClass,
-  ButtonCard,
   ProfessionalMentor,
   HeaderProfessionalMentor,
   ContentProfessionalMentor,
@@ -48,6 +49,7 @@ import HomeStyles, {
   TitleCardProfessionalMentor,
   ButtonFavoriteClass,
   ButtonProfessionalMentor,
+  StudentsCarousel,
 } from "../styles/HomeStyles";
 
 const Home = () => {
@@ -66,6 +68,7 @@ const Home = () => {
             <Button>Get Started</Button>
           </TextGetStarted>
         </GetStarted>
+
         <StudyAnywhere>
           <TextStudyAnywhere>
             <FirstText>study anywhere easily online</FirstText>
@@ -124,6 +127,7 @@ const Home = () => {
             <img src={man2} alt="logo" width="600px" />
           </ImgStudyAnywhere>
         </StudyAnywhere>
+
         <FavoriteClass>
           <TitleFavoriteClass>Favorite Class</TitleFavoriteClass>
           <CardsFavoriteClass>
@@ -223,6 +227,7 @@ const Home = () => {
             </CardFavoriteClass>
           </CardsFavoriteClass>
         </FavoriteClass>
+
         <ProfessionalMentor>
           <HeaderProfessionalMentor>
             <FirstTextHeaderProfessionalMentor>
@@ -250,8 +255,12 @@ const Home = () => {
                 />
               </div>
               <ContentCardProfessionalMentor>
-                <TitleCardProfessionalMentor>Jemy Durinto</TitleCardProfessionalMentor>
-                <DescriptionCardProfessionalMentor>Logo Designer</DescriptionCardProfessionalMentor>
+                <TitleCardProfessionalMentor>
+                  Jemy Durinto
+                </TitleCardProfessionalMentor>
+                <DescriptionCardProfessionalMentor>
+                  Logo Designer
+                </DescriptionCardProfessionalMentor>
               </ContentCardProfessionalMentor>
             </CardProfessionalMentor>
             <CardProfessionalMentor>
@@ -268,8 +277,12 @@ const Home = () => {
                 />
               </div>
               <ContentCardProfessionalMentor>
-                <TitleCardProfessionalMentor>Seikoji De Loparto</TitleCardProfessionalMentor>
-                <DescriptionCardProfessionalMentor>Logo Designer</DescriptionCardProfessionalMentor>
+                <TitleCardProfessionalMentor>
+                  Seikoji De Loparto
+                </TitleCardProfessionalMentor>
+                <DescriptionCardProfessionalMentor>
+                  Logo Designer
+                </DescriptionCardProfessionalMentor>
               </ContentCardProfessionalMentor>
             </CardProfessionalMentor>
             <CardProfessionalMentor>
@@ -286,8 +299,12 @@ const Home = () => {
                 />
               </div>
               <ContentCardProfessionalMentor>
-                <TitleCardProfessionalMentor>Miracle Panta</TitleCardProfessionalMentor>
-                <DescriptionCardProfessionalMentor>UI/UX Designer</DescriptionCardProfessionalMentor>
+                <TitleCardProfessionalMentor>
+                  Miracle Panta
+                </TitleCardProfessionalMentor>
+                <DescriptionCardProfessionalMentor>
+                  UI/UX Designer
+                </DescriptionCardProfessionalMentor>
               </ContentCardProfessionalMentor>
             </CardProfessionalMentor>
             <CardProfessionalMentor>
@@ -304,8 +321,12 @@ const Home = () => {
                 />
               </div>
               <ContentCardProfessionalMentor>
-                <TitleCardProfessionalMentor>Dery Franklin</TitleCardProfessionalMentor>
-                <DescriptionCardProfessionalMentor>Motion Graphic</DescriptionCardProfessionalMentor>
+                <TitleCardProfessionalMentor>
+                  Dery Franklin
+                </TitleCardProfessionalMentor>
+                <DescriptionCardProfessionalMentor>
+                  Motion Graphic
+                </DescriptionCardProfessionalMentor>
               </ContentCardProfessionalMentor>
             </CardProfessionalMentor>
           </ContentProfessionalMentor>
@@ -313,6 +334,84 @@ const Home = () => {
             <Button>Show More</Button>
           </ButtonProfessionalMentor>
         </ProfessionalMentor>
+
+        <StudentsCarousel>
+          <Carousel
+            additionalTransfrom={0}
+            arrows
+            autoPlaySpeed={3000}
+            centerMode={false}
+            className=""
+            containerClass="container"
+            dotListClass=""
+            draggable
+            focusOnSelect={false}
+            infinite
+            itemClass=""
+            keyBoardControl
+            minimumTouchDrag={80}
+            pauseOnHover
+            renderArrowsWhenDisabled={false}
+            renderButtonGroupOutside={false}
+            renderDotsOutside={false}
+            responsive={{
+              desktop: {
+                breakpoint: {
+                  max: 3000,
+                  min: 1024,
+                },
+                items: 1,
+              },
+              mobile: {
+                breakpoint: {
+                  max: 464,
+                  min: 0,
+                },
+                items: 1,
+              },
+              tablet: {
+                breakpoint: {
+                  max: 1024,
+                  min: 464,
+                },
+                items: 1,
+              },
+            }}
+            rewind={false}
+            rewindWithAnimation={false}
+            rtl={false}
+            shouldResetAutoplay
+            showDots
+            sliderClass=""
+            slidesToSlide={1}
+            swipeable
+          >
+            <StudentCarouselItem
+              image={woman}
+              name="Maryam Jessica"
+              headline="What Our Students Are Saying"
+              description="The flexibility of online courses allowed me to balance my
+                    studies with my job and family life. The resources and materials
+                    were top-notch, and the interactive discussions were a highlight"
+            />
+            <StudentCarouselItem
+              image={woman}
+              name="Michele Obama"
+              headline="What Our Students Are Saying"
+              description="The flexibility of online courses allowed me to balance my
+                    studies with my job and family life. The resources and materials
+                    were top-notch, and the interactive discussions were a highlight"
+            />
+            <StudentCarouselItem
+              image={woman}
+              name="Stephany Ohara"
+              headline="What Our Students Are Saying"
+              description="The flexibility of online courses allowed me to balance my
+                    studies with my job and family life. The resources and materials
+                    were top-notch, and the interactive discussions were a highlight"
+            />
+          </Carousel>
+        </StudentsCarousel>
       </HomeStyles>
     </PageLayout>
   );

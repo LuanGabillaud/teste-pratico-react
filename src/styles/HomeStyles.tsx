@@ -374,60 +374,68 @@ export const CardProfessionalMentor = styled.div`
 `;
 
 export const ContentCardProfessionalMentor = styled.div`
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
 
-width: 295px;
-height: 60px;
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+  width: 295px;
+  height: 60px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 `;
 
 export const TitleCardProfessionalMentor = styled.div`
-width: 362px;
-height: 32px;
-text-align: left;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 32px;
-color: #FFFFFF;
-flex: none;
-order: 0;
-flex-grow: 0;
+  width: 362px;
+  height: 32px;
+  text-align: left;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 `;
 
 export const DescriptionCardProfessionalMentor = styled.div`
-width: 328px;
-height: 24px;
-text-align: left;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 24px;
-text-transform: capitalize;
-color: #707170;
-flex: none;
-order: 1;
-flex-grow: 0;
+  width: 328px;
+  height: 24px;
+  text-align: left;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #707170;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 `;
 
 export const ButtonProfessionalMentor = styled.div`
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-position: absolute;
-width: 80%;
-left: 112px;
-top: 740.42px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 80%;
+  left: 112px;
+  top: 740.42px;
+`;
+
+export const StudentsCarousel = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 569px;
+  left: 112px;
+  top: 3400.42px;
 `;
 
 const HomeStyles: React.FC<{ children: React.ReactNode }> = ({ children }) => {
