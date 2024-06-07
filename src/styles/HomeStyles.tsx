@@ -158,6 +158,277 @@ export const CarouselStudyAnywhere = styled.div`
   flex-grow: 0;
 `;
 
+export const FavoriteClass = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 34px;
+
+  position: absolute;
+  width: 1217px;
+  height: 526px;
+  left: 112px;
+  top: 1847.42px;
+`;
+
+export const TitleFavoriteClass = styled.h1`
+  width: 441px;
+  height: 72px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #fbf2f2;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
+export const CardsFavoriteClass = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 13px;
+  width: 100%;
+  height: 338px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
+
+export const CardFavoriteClass = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 29px;
+  width: 397px;
+  height: 338px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  cursor: pointer;
+`;
+
+export const ContentCardFavoriteClass = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 397px;
+  height: 140px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
+
+export const TitleCardFavoriteClasss = styled.div`
+  width: 296px;
+  height: 22px;
+  text-align: left;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 5px;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
+export const DescriptionCardFavoriteClass = styled.div`
+  width: 397px;
+  height: 72px;
+  text-align: left;
+  margin-top: -120px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #8c8f99;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+`;
+
+export const InfoCardFavoriteClass = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  color: #fff;
+  gap: 18px;
+
+  width: 308px;
+  height: 20px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+`;
+
+export const ButtonFavoriteClass = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 80%;
+  left: 112px;
+  top: 547.42px;
+`;
+
+export const ProfessionalMentor = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+  position: absolute;
+  width: 1217px;
+  height: 662px;
+  left: 112px;
+  top: 2523.42px;
+`;
+
+export const HeaderProfessionalMentor = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 127px;
+  width: 100%;
+  height: 144px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
+export const FirstTextHeaderProfessionalMentor = styled.div`
+  width: 487px;
+  height: 144px;
+  text-align: left;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #fbf2f2;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
+export const SecondtextHeaderProfessionalMentor = styled.div`
+  width: 603px;
+  height: 96px;
+  text-align: left;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #8c8f99;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
+
+export const ContentProfessionalMentor = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  width: 100%;
+  height: 406px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
+
+export const CardProfessionalMentor = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 295px;
+  height: 406px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
+export const ContentCardProfessionalMentor = styled.div`
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 295px;
+height: 60px;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+`;
+
+export const TitleCardProfessionalMentor = styled.div`
+width: 362px;
+height: 32px;
+text-align: left;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+color: #FFFFFF;
+flex: none;
+order: 0;
+flex-grow: 0;
+`;
+
+export const DescriptionCardProfessionalMentor = styled.div`
+width: 328px;
+height: 24px;
+text-align: left;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+text-transform: capitalize;
+color: #707170;
+flex: none;
+order: 1;
+flex-grow: 0;
+`;
+
+export const ButtonProfessionalMentor = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+position: absolute;
+width: 80%;
+left: 112px;
+top: 740.42px;
+`;
 
 const HomeStyles: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return <>{children}</>;
