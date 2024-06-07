@@ -1,7 +1,22 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import learnToLearn from '../assets/learnToLearn-logo.svg';
-import LandingPageStyles, { Container, Nav, Logo, Links, StyledLink, Button, ButtonLogin, ButtonSignin, Footer, InfoFooter, InputContainer, InputFooter, ButtonFooter } from '../styles/LandingPageStyles';
+import LandingPageStyles, 
+{ 
+    Container, 
+    Nav, 
+    Logo, 
+    Links, 
+    StyledLink, 
+    Button, 
+    ButtonLogin, 
+    ButtonSignin, 
+    Footer, 
+    InfoFooter, 
+    InputContainer, 
+    InputFooter, 
+    ButtonFooter
+} from '../styles/LandingPageStyles';
 
 type LayoutProps = {
   children: React.ReactNode;

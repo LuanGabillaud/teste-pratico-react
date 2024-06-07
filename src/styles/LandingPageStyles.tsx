@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
 interface LandingPageProps {
   backgroundColor: string;
@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle<LandingPageProps>`
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    overflow-x: clip;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -80,28 +81,27 @@ export const StyledLink = styled(Links)`
       color: #c3c0c0;
       opacity: 0.7;
     }
-    
-  }    
+  }
 `;
 
 export const Button = styled.a`
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   padding: 12px 4px;
-   gap: 5px;
-   width: 124px;
-   height: 48px;
-   flex: none;
-   cursor: pointer;
-   order: 0;
-   flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 4px;
+  gap: 5px;
+  width: 124px;
+  height: 48px;
+  flex: none;
+  cursor: pointer;
+  order: 0;
+  flex-grow: 0;
 `;
 
 export const ButtonLogin = styled(Button)`
-  background: #01FE84;
-  border: 1px solid #01FE84;       
+  background: #01fe84;
+  border: 1px solid #01fe84;
   border-radius: 999px;
   font-weight: 700;
   color: #101310;
@@ -110,48 +110,47 @@ export const ButtonLogin = styled(Button)`
 
 export const ButtonSignin = styled(Button)`
   background: transparent;
-  border: 1px solid #01FE84;     
-  border-radius: 999px;  
+  border: 1px solid #01fe84;
+  border-radius: 999px;
   margin-right: 10px;
   font-weight: 700;
-  color: #01FE84;
+  color: #01fe84;
 `;
 
 export const Footer = styled.footer`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 47px 0px;
-    gap: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 47px 0px;
+  gap: 36px;
 
-    position: absolute;
-    width: 100%;
-    height: 309px;
-    left: 0px;
-    top: 4054.42px;
+  position: absolute;
+  width: 100%;
+  height: 309px;
+  left: 0px;
+  top: 4054.42px;
 
-    background: #1F241F;    
+  background: #1f241f;
 `;
 
 export const InfoFooter = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    padding: 0px;
-    gap: 504px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 504px;
 
-    width: 1216px;
-    height: 84px;
+  width: 1216px;
+  height: 84px;
 
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-
-    & p {        
-      color: #c3c0c0;
-      opacity: 0.7;
-    }
+  & p {
+    color: #c3c0c0;
+    opacity: 0.7;
+  }
 `;
 
 export const InputContainer = styled.div`
@@ -161,7 +160,7 @@ export const InputContainer = styled.div`
   border-radius: 999px;
   width: 426px;
   height: 48px;
-  overflow: hidden; /* Para garantir que os elementos internos se ajustem ao contêiner */
+  overflow: hidden;
 `;
 
 export const InputFooter = styled.input`
@@ -172,12 +171,12 @@ export const InputFooter = styled.input`
   height: 100%;
   outline: none;
   border-radius: 999px 0 0 999px;
-  color: #01FE84;
+  color: #01fe84;
 `;
 
 export const ButtonFooter = styled(Button)`
-  background: #01FE84;
-  border: 1px solid #01FE84;
+  background: #01fe84;
+  border: 1px solid #01fe84;
   font-weight: 700;
   color: #101310;
   box-shadow: 0px 4px 59px rgba(1, 254, 132, 0.8);
@@ -188,10 +187,15 @@ export const ButtonFooter = styled(Button)`
   justify-content: center;
 `;
 
-const LandingPageStyles: React.FC<LandingPageProps & { children: React.ReactNode }> = ({ backgroundColor, backgroundImage, children }) => {
+const LandingPageStyles: React.FC<
+  LandingPageProps & { children: React.ReactNode }
+> = ({ backgroundColor, backgroundImage, children }) => {
   return (
     <>
-      <GlobalStyle backgroundColor={backgroundColor} backgroundImage={backgroundImage} />
+      <GlobalStyle
+        backgroundColor={backgroundColor}
+        backgroundImage={backgroundImage}
+      />
       {children}
     </>
   );

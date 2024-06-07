@@ -3,3 +3,12 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+.react-multiple-carousel__arrow {
+  background-color: transparent !important;
+  border: 1px solid #01fe84 !important;
+}
+
+.react-multiple-carousel__arrow::before {
+  color: #01fe84 !important;
+}
