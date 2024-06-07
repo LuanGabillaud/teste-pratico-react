@@ -1,8 +1,9 @@
-import React, { useState, FormEvent } from "react";
+import React, { useState, useEffect, FormEvent } from "react";
 import { FaUser, FaLock } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import AuthLayout from "../components/AuthLayout";
 import AuthStyle from "../styles/AuthStyles";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../css/Login.css";
 
 const Login: React.FC = () => {
@@ -10,6 +11,13 @@ const Login: React.FC = () => {
   const [password, setPassword] = useState<string>("");
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("authToken");
+    if (token) {
+      navigate("/dashboard");
+    }
+  }, [navigate]);
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
